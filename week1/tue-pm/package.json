@@ -1,0 +1,16 @@
+{
+  "name": "cowsay",
+  "version": "1.0.0",
+  "description": "My cowsay project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "cowme": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex C",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.5.0"
+  }
+}

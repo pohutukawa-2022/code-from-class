@@ -5,4 +5,5 @@
 
 ## Week One
 
-* Monday: [Node.js, npm and the REPL](./week1/mon-pm)
+* Monday PM: [Node.js, npm and the REPL](./week1/mon-pm)
+* Tuesday PM: [npm, package.json and .gitignore](./week1/tues-pm)

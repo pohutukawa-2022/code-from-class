@@ -1,0 +1,16 @@
+{
+  "name": "w1d3-1",
+  "version": "1.0.0",
+  "description": "Star Wars",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}

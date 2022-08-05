@@ -8,3 +8,4 @@
 * Monday PM: [Node.js, npm and the REPL](./week1/mon-pm)
 * Tuesday PM: [npm, package.json and .gitignore](./week1/tue-pm)
 * Wednesday AM: [Data structures and automated testing](./week1/wed-am)
+* Friday PM: [Testing async callback functions](./week1/fri-pm)

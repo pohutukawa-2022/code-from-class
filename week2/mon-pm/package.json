@@ -1,0 +1,14 @@
+{
+  "name": "express-demo",
+  "version": "1.0.0",
+  "description": "Setting up our first web server with express",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "EDA",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

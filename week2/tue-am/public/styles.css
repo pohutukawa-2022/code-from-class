@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: rgb(184,152,181);
+  background: linear-gradient(90deg, rgba(184,152,181,1) 0%, rgba(121,67,9,1) 43%, rgba(0,212,255,1) 100%);
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  background: rgba(255,255,255,.7);
+  margin-bottom: 20px;
+  width: 100%;
+}
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+}
+nav ul, nav li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+nav a {
+  display: block;
+  font-size: 1.5rem;
+  padding: 20px;
+  color: black;
+}
+nav a:hover {
+  background: white;
+}
+main {
+  max-width: 900px;
+  margin: 0 20px;
+  width: calc(100% - 40px);
+}
+main h1 {
+  color: white;
+}
+article {
+  padding: 10px;
+  background: rgba(255,255,255,.7);
+  margin-bottom: 10px;
+}
+article h2 {
+  padding: 0 20px;
+}
+.type {
+  color: blueviolet;
+}
+.posts {
+  margin: 10px 20px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px black;
+  color: black;
+}
+.image {
+  max-height: 200px;
+}xs
+footer {
+  max-width: 900px;
+  margin: 20px auto 0;
+  text-align: center;
+  color: white;
+}
+.post-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+p {
+  padding: 0px 10px;
+}

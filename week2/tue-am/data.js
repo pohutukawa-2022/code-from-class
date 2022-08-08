@@ -1,7 +1,7 @@
 module.exports = {
   blogs: [
     {
-      blogType: 'technical blogs',
+      blogType: 'fun blogs',
       details: [
         {
           name: 'Class and ID selectors',
@@ -35,7 +35,6 @@ module.exports = {
         {
           name: 'Neuroplasticity & Growth',
           date: '14 February 2022',
-          image: 'https://i.imgur.com/kQ1cS4a.jpg',
           shortPost:
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed venenatis ligula ut nunc malesuada, pharetra molestie mi varius. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sit amet semper magna. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur lobortis sapien nec est pulvinar, ut molestie ipsum dignissim. Mauris a tortor nibh. Vivamus at turpis posuere ex tincidunt lacinia. Donec at nunc tempus, imperdiet tortor suscipit, gravida lectus. Integer blandit nisl id nisl tristique, vitae egestas libero efficitur. Praesent hendrerit, purus in rhoncus sollicitudin, massa nibh posuere dolor, egestas rhoncus turpis nisl eu sapien. In hac habitasse platea dictumst.',
           post: [

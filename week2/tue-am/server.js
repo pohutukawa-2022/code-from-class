@@ -1,6 +1,7 @@
 // IMPORT THE BASICS
 const path = require('path')
 const express = require('express')
+const { engine } = require('express-handlebars')
 // Import data
 const data = require('./data')
 
@@ -13,12 +14,22 @@ const publicFolder = path.join(__dirname, 'public')
 server.use(express.static(publicFolder))
 server.use(express.urlencoded({ extended: false }))
 
+// CREATE A NEW VIEW ENGINE
+server.engine('hbs', engine({ extname: 'hbs' }))
+
+// CONNECT ENGINE TO SERVER
+server.set('view engine', 'hbs')
+server.set('views', './views')
+
 server.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'old.html'))
+  const viewData = {
+    blogs: data.blogs,
+  }
+  res.render('home', viewData)
 })
 
 server.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'old-contact.html'))
+  res.render('contact')
 })
 
 server.get('/about', (req, res) => {

@@ -9,3 +9,8 @@
 * Tuesday PM: [npm, package.json and .gitignore](./week1/tue-pm)
 * Wednesday AM: [Data structures and automated testing](./week1/wed-am)
 * Friday PM: [Testing async callback functions](./week1/fri-pm)
+
+## Week Two
+
+* Monday PM: [Testing express server with supertest](./week2/mon-pm)
+

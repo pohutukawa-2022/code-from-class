@@ -1,0 +1,11 @@
+<main>
+  <h1>My music collection!!</h1>
+  {{#each artists}}
+  <article class="artist">
+    <h2>{{name}}</h2>
+    {{#each albums}}
+    {{> album}}
+    {{/each}}
+  </article>
+  {{/each}}
+</main>

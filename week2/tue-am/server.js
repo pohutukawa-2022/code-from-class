@@ -33,5 +33,5 @@ server.get('/contact', (req, res) => {
 })
 
 server.get('/about', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'old-about.html'))
+  res.render('about')
 })

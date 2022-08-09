@@ -1,0 +1,42 @@
+{
+  "name": "w2d3am",
+  "version": "1.0.0",
+  "description": "express with promises",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2"
+  },
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.14.1",
+    "eslint": "^8.10.0",
+    "eslint-config-eda": "^1.2.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "prettier": "2.6.1",
+    "supertest": "^6.2.2"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

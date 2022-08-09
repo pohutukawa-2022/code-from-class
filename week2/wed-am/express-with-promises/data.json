@@ -1,0 +1,11 @@
+{
+  "Action": ["Henrey", "Luke", "Xavier"],
+  "Adventure": ["Bryden", "Livi"],
+  "Puzzle": ["AL"],
+  "RGP": ["Fred", "Oscar", "Sebastian", "Taylor"],
+  "Simulation": ["Vanessa", "Mikesh"],
+  "Strategy": ["Frey", "Taylor", "Vanessa", "Yara", "Mikesh"],
+  "Sports": ["Vanessa"],
+  "MMO": ["Fergus", "Fred", "Sebastian"],
+  "Open World": ["AL", "Benson", "Fergus", "Gracie"]
+}

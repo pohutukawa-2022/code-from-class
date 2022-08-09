@@ -1,0 +1,28 @@
+ <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+      <h1>My Dev Academy Blog</h1>
+      <article class="type">
+    <main>       
+       {{#each blogs}} 
+        <h2>{{blogType}}</h2>  
+         <div class="posts">
+          {{#each details}}
+          <h3>{{name}} - {{date}}</h3>
+           {{>blogPosts}}
+          {{/each}}
+        </div>
+      {{/each}}
+
+       
+      </article>
+    </main>
+
+  </body>

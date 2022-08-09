@@ -14,3 +14,4 @@
 
 * Monday PM: [Testing express server with supertest](./week2/mon-pm)
 
+* Tuesday PM: [Testing express server with testing-library](./week2/tue-pm)

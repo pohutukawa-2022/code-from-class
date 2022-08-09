@@ -35,7 +35,7 @@ function combineArts() {
             ${nikau}
             ${pohutukawa}
             `;
-            const myNewFilePath = path.join(__dirname, 'data', 'myart.txt');
+            const myNewFilePath = path.join(__dirname, 'data', 'combined.txt');
 
             fs.writeFile(myNewFilePath, newArt, (err) => {
               if (err) {

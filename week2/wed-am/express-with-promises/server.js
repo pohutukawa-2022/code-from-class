@@ -5,14 +5,14 @@ const path = require('path')
 const hbs = require('express-handlebars')
 
 module.exports = server
-fs// Middleware
-.server
-  .engine(
-    'hbs',
-    hbs.engine({
-      extname: 'hbs',
-    })
-  )
+
+// Middleware
+server.engine(
+  'hbs',
+  hbs.engine({
+    extname: 'hbs',
+  })
+)
 server.set('view engine', 'hbs')
 server.use(express.static('public'))
 
@@ -33,6 +33,7 @@ server.get('/', (req, res) => {
     .catch((error) => {
       console.error(error)
     })
+  console.log('finished')
 })
 
 server.get('/:genre', async (req, res) => {

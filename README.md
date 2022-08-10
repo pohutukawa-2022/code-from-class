@@ -16,3 +16,4 @@
 * Monday PM: [Testing express server with supertest](./week2/mon-pm)
 * Tuesday AM: [Server-side rendering with Express-Handlebars](./week2/tue-am)
 * Tuesday PM: [Testing express server with testing-library](./week2/tue-pm)
+* Wednesday AM: [Consuming Promises with express and express handlebars](./week2/wed-am)

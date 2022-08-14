@@ -17,3 +17,7 @@
 * Tuesday AM: [Server-side rendering with Express-Handlebars](./week2/tue-am)
 * Tuesday PM: [Testing express server with testing-library](./week2/tue-pm)
 * Wednesday AM: [Consuming Promises with express and express handlebars](./week2/wed-am)
+
+## Week Three
+
+* Monday AM: [Introduction to databases (Relational DB's, SQLite3, Knex.js)](./week3/mon-am)

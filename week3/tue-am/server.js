@@ -3,6 +3,8 @@ const path = require('path')
 const express = require('express')
 const { engine } = require('express-handlebars')
 
+const db = require('./db/index')
+
 const server = express()
 module.exports = server
 
@@ -17,6 +19,12 @@ server.set('views', './views')
 // WRITE THOSE ROUTES
 server.get('/', (req, res) => {
   // TODO: render characters in the home page
+  db.getCharacters().then((characters) => {
+    console.log(characters)
+    const viewData = {
+      characters,
+    }
 
-  res.send('This page should show all the characters.')
+    res.render('home', viewData)
+  })
 })

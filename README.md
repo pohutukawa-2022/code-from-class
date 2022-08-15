@@ -21,3 +21,4 @@
 ## Week Three
 
 * Monday AM: [Introduction to databases (Relational DB's, SQLite3, Knex.js)](./week3/mon-am)
+* Tuesday AM: [Relational DBs and Joins](./week3/tue-am)

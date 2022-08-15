@@ -1,0 +1,16 @@
+<form method="post" action="/actors/add">
+  <input type="text" name="actorName" placeholder="Enter actor name">
+  <select name="countryId">
+    <option>select Country</option>
+    {{#each countries}}
+    <option value="{{id}}">{{name}}</option>
+    {{/each}}
+  </select>
+  <select name="characterId">
+    <option>Select Character</option>
+    {{#each characters}}
+    <option value="{{id}}">{{name}}</option>
+    {{/each}}
+  </select>
+  <button>Add</button>
+</form>

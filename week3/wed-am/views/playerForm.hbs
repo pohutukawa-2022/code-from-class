@@ -1,0 +1,15 @@
+<form method="post" action="/players/add">
+  <select name="genreId">
+    <option>Select Genre</option>
+    {{#each genres}}
+    <option value="{{id}}">{{name}}</option>
+    {{/each}}
+  </select>
+  <select name="playerId">
+    <option>Select Player</option>
+    {{#each players}}
+    <option value="{{id}}">{{name}}</option>
+    {{/each}}
+  </select>
+  <button>Add</button>
+</form>

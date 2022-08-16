@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  max-width: 150px;
+  width: auto;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}

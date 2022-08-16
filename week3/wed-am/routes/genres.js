@@ -1,11 +1,14 @@
 const express = require('express')
 const router = express.Router()
-
+const dbGenres = require('../db/genres')
 module.exports = router
 
+// GET /genres/
 router.get('/', async (req, res) => {
   try {
-    const viewData = { genres: [{ id: 1, name: 'some random genres here' }] }
+    const genres = await dbGenres.getGenres()
+    console.log(genres)
+    const viewData = { genres }
 
     res.render('genres', viewData)
   } catch (error) {
@@ -15,11 +18,10 @@ router.get('/', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   try {
+    const id = req.params.id
+    const playerGenres = await dbGenres.getPlayersByGenre(id)
     const viewData = {
-      players: [
-        { id: 1, playerName: 'Alice' },
-        { id: 2, playerName: 'Bob' },
-      ],
+      players: playerGenres,
     }
 
     res.render('genre', viewData)

@@ -1,15 +1,16 @@
 const express = require('express')
+const dbPlayers = require('../db/players')
+const dbGenres = require('../db/genres')
 const router = express.Router()
 
 module.exports = router
 
+// GET /players/
 router.get('/', async (req, res) => {
   try {
+    const players = await dbPlayers.getPlayers()
     const viewData = {
-      players: [
-        { id: 1, name: 'Alice' },
-        { id: 2, name: 'Bob' },
-      ],
+      players,
     }
 
     res.render('players', viewData)
@@ -18,17 +19,15 @@ router.get('/', async (req, res) => {
   }
 })
 
+// GET /players/add
 router.get('/add', async (req, res) => {
   try {
+    const players = await dbPlayers.getPlayers()
+    const genres = await dbGenres.getGenres()
+
     const viewData = {
-      genres: [
-        { id: 1, name: 'genre1' },
-        { id: 2, name: 'genre2' },
-      ],
-      players: [
-        { id: 1, name: 'Alice' },
-        { id: 2, name: 'Bob' },
-      ],
+      genres,
+      players,
     }
     res.render('playerForm', viewData)
   } catch (error) {
@@ -38,6 +37,8 @@ router.get('/add', async (req, res) => {
 
 router.post('/add', async (req, res) => {
   try {
+    const player = req.body
+    await dbPlayers.addPlayerGenres(player)
     res.redirect('/players')
   } catch (error) {
     console.error(error)

@@ -23,3 +23,4 @@
 * Monday AM: [Introduction to databases (Relational DB's, SQLite3, Knex.js)](./week3/mon-am)
 * Tuesday AM: [Relational DBs and Joins](./week3/tue-am)
 * Tuesday PM: [Testing the Data Layer](./week3/tue-pm)
+* Wednesday AM: [Experss handlebars with Knex](./week3/wed-am)

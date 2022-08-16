@@ -1,0 +1,29 @@
+{
+  "name": "tue-pm",
+  "version": "1.0.0",
+  "description": "testing the data layer",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --detectOpenHandles"
+  },
+  "keywords": [
+    "testing",
+    "jest",
+    "databases",
+    "knex"
+  ],
+  "author": "EDA",
+  "license": "ISC",
+  "eslintConfig": {
+    "extends": "eda"
+  },
+  "dependencies": {
+    "knex": "^0.95.10",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-eda": "^0.1.5",
+    "jest": "^27.4.7"
+  }
+}

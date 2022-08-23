@@ -1,0 +1,50 @@
+{
+  "name": "w4d2am",
+  "version": "0.2.2",
+  "description": "Stateful React components and event handling",
+  "main": "server/index.js",
+  "author": "EDA",
+  "license": "ISC",
+  "scripts": {
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "webpack --watch",
+    "dev:server": "nodemon server",
+    "start": "node server",
+    "build": "webpack",
+    "test": "jest --watchAll"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "npm-run-all": "^4.1.5",
+    "superagent": "^5.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-object-rest-spread": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^25.2.6",
+    "babel-loader": "^8.1.0",
+    "jest": "^25.2.7",
+    "nodemon": "^2.0.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}

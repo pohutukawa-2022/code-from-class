@@ -28,3 +28,5 @@
 ## Week Four
 
 * Tuesday AM: [React State and Events](./week4/tue-am)
+* Wednesday AM: [Client Side Rendering with React Router](./week4/wed-am)
+

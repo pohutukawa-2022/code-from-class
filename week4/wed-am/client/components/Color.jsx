@@ -1,9 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 function Color() {
-  const style = { color: 'blue' }
+  const { colorName } = useParams()
+  const style = { color: colorName }
 
-  return <p style={style}>Colour Name Here</p>
+  return <p style={style}>{colorName}</p>
 }
 
 export default Color

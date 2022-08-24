@@ -1,0 +1,19 @@
+.row {
+  margin: 10px;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+}
+
+.card {
+  width: 100px;
+  border-radius: 5%;
+  border: 2px solid darkmagenta;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.details > p {
+  width: 50%;
+}

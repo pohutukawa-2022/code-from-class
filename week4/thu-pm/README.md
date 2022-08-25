@@ -6,7 +6,7 @@
 
 ## Create a state in the App components
 
-## Make the Details page work using useParams hook and reiterate on Stateless Components and Stateful components
+## Cover preventDefault and why we need it
 
 ## Add event handlers for the form
 
@@ -14,7 +14,7 @@
 
 ## Keeping our code DRY when handling multiple events by using computed properties
 
-## Cover preventDefault and why we need it
 
+## Make the Details page work using useParams hook and reiterate on Stateless Components and Stateful components
 ## Recap and Q&A 
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { useParams } from 'react-router-dom'
 
 function Details(props) {
+  console.log('details rendered');
   const { id } = useParams()
   const product = props.products.find((product) => product.id.toString() === id)
 

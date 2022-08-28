@@ -32,3 +32,7 @@
 * Wednesday AM: [Client Side Rendering with React Router](./week4/wed-am)
 * Thursday PM: [React forms](./week4/thu-pm)
 
+## Week Five
+
+* Monday AM: [REST Web APIs](./week5/mon-am)
+

@@ -24,3 +24,9 @@
 * Tuesday AM: [Relational DBs and Joins](./week3/tue-am)
 * Tuesday PM: [Testing the Data Layer](./week3/tue-pm)
 * Wednesday AM: [Experss handlebars with Knex](./week3/wed-am)
+
+## Week Four
+
+* Tuesday AM: [React State and Events](./week4/tue-am)
+* Wednesday AM: [Client Side Rendering with React Router](./week4/wed-am)
+

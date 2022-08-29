@@ -1,0 +1,44 @@
+{
+  "name": "w5d2p",
+  "version": "0.1.0",
+  "description": "CORS and external apis",
+  "repository": "https://github.com/dev-academy-challenges/react-minimal.git",
+  "main": "index.js",
+  "scripts": {
+    "start": "run-p build server",
+    "dev": "run-p client server",
+    "build": "webpack --config client/webpack.config.js",
+    "client": "npm run build -- --watch",
+    "server": "node server",
+    "lint": "eslint ."
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  },
+  "keywords": [],
+  "author": "EDA",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "node": "^14.18",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.0",
+    "superagent": "7.1.1",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
+  }
+}

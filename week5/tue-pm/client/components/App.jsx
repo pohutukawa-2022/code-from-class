@@ -1,23 +1,25 @@
 import React, { useEffect, useState } from 'react'
 import request from 'superagent'
+import { getFruits } from '../api'
 
 function App() {
-  const [fruits, setFruits] = useState([])
+  const [fruit, setFruits] = useState([])
 
-  useEffect(() => {}, [])
+  useEffect(() => {
+    getFruits()
+      .then((res) => {
+        setFruits(res.body)
+      })
+      .catch((err) => {
+        console.error(`Oh no!: ${err.message}`)
+      })
+  }, [])
+
+  console.log(fruit)
 
   return (
     <>
       <h1>Fruits</h1>
-      <ul>
-        {fruits?.map((fruit) => {
-          return (
-            <li key={fruit.id}>
-              {fruit.name} - ({fruit.family} {fruit.genus})
-            </li>
-          )
-        })}
-      </ul>
     </>
   )
 }

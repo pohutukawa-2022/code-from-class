@@ -28,5 +28,13 @@
 ## Week Four
 
 * Tuesday AM: [React State and Events](./week4/tue-am)
+* Tuesday PM: [Testing React with React Testing Library](./week4/tue-pm)
 * Wednesday AM: [Client Side Rendering with React Router](./week4/wed-am)
+* Thursday PM: [React forms](./week4/thu-pm)
 
+## Week Five
+
+* Monday AM: [REST Web APIs](./week5/mon-am)
+* Monday PM: [Testing Web APIs with Mocks](./week5/mon-pm)
+* Tuesday AM: [Consuming External API](./week5/tue-am)
+* Tuesday PM: [CORS](./week5/tue-pm)

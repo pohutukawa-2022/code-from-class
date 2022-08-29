@@ -1,7 +1,5 @@
 # CORS & proxy servers
 
-Lecture slides here! https://www.figma.com/file/5bJ62f7NU2uog8swcuxlGe/CORS-(Elise)?node-id=0%3A1
-
 ```
 import React, { useState, useEffect } from 'react'
 import { getAllFruitAPI } from '../api'

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Miltonian&display=swap');
+
+body {
+  color: black;
+  background-color: rgb(107, 207, 253);
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.title{
+ color:rgb(249, 238, 40);
+ -webkit-text-stroke: #555fe6;
+ -webkit-text-stroke-color: #555fe6;
+ -webkit-text-stroke-width: 2.5px;
+ font-size: 70px;
+}
+
+/* .catch {
+  ani
+} */
+
+img {
+  width: 200px;
+}
+.loader {
+  border: 24px solid #FFF;
+  border-color: #FF3D00 #FF3D00 #fff #fff;
+  border-radius: 50%;
+  animation: rotate 2.5s ease infinite;
+  width: 22px;
+  height: 22px;
+  background-color: black;
+  box-shadow: 0px 0px 2px black;
+  box-shadow: 0px 0px 5px 1px grey;
+  margin-left: 46vw;
+}
+
+.loader-middle {
+  content: '';
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  background: white;
+  border-radius: 50%;
+  left: 25%;
+  top: 25%;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(315deg);
+  }
+    100% {
+    transform: rotate(-45deg);
+  }
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+h2 {
+  color: red;
+}

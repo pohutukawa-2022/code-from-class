@@ -38,3 +38,4 @@
 * Monday PM: [Testing Web APIs with Mocks](./week5/mon-pm)
 * Tuesday AM: [Consuming External API](./week5/tue-am)
 * Tuesday PM: [CORS](./week5/tue-pm)
+* Wednesday PM: [Full-stack](./week5/wed-am)

@@ -1,16 +1,24 @@
-import React from 'react'
-
-const initial = [
-  { id: 1, name: 'Rust' },
-  { id: 2, name: 'F#' },
-  { id: 3, name: 'Brainfuck' },
-]
+import React, { useEffect, useState } from 'react'
+import { fetchLanguages } from '../api'
 
 function List() {
+  const [langs, setLangs] = useState([])
+
+  useEffect(() => {
+    fetchLanguages()
+      .then((languages) => {
+        console.log(languages)
+        setLangs(languages)
+      })
+      .catch((err) => {
+        console.error(err)
+      })
+  }, [])
+
   return (
     <section>
       <ul>
-        {initial.map((lang) => (
+        {langs.map((lang) => (
           <li key={lang.id}>
             <p>{lang.name}</p>
           </li>

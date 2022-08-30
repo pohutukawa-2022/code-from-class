@@ -10,7 +10,7 @@ function Form() {
     setInput(event.target.value)
   }
 
-  function handleSubmit() {
+  function handleSubmit(event) {
     event.preventDefault()
 
     // TODO: post the input using an HTTP call then navigate

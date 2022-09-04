@@ -1,21 +1,28 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
+import { deleteTodo } from '../slices/todos'
 
-function Words() {
-  const todos = [
-    { id: 1, text: 'Learn redux toolkit' },
-    { id: 2, text: 'eat' },
-    { id: 3, text: 'sleep' },
-  ]
+function Todos() {
+  const todos = useSelector((state) => state.todos)
+  const dispatch = useDispatch()
+
+  function handleDelete(todo) {
+    dispatch(deleteTodo(todo))    
+  }
 
   return (
     <ul>
       {todos.map((todo) => (
-        <li key={todo.text}>
-          {todo.id}: {todo.text}
+        <li key={todo}>
+          <section>
+            {todo}
+            <button onClick={() => handleDelete(todo)}>X</button>
+          </section>
         </li>
       ))}
     </ul>
   )
 }
 
-export default Words
+export default Todos

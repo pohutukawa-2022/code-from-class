@@ -1,8 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
-
+import { useDispatch } from 'react-redux'
+import { addTodo } from '../slices/todos'
 
 function AddWord() {
+  const dispatch = useDispatch()
   const [input, setInput] = useState('')
 
   function handleChange(event) {
@@ -10,7 +12,8 @@ function AddWord() {
   }
   function handleSubmit(event) {
     event.preventDefault()
-    console.log('Todo: ', input);
+    console.log('Todo: ', input)
+    dispatch(addTodo(input))
     // clear input
     setInput('')
   }

@@ -6,7 +6,7 @@ import AddTodo from './AddTodo'
 function App () {
   return (
     <>
-      <h1>Words!</h1>
+      <h1>Todos!</h1>
       <Todos />
       <AddTodo />
     </>

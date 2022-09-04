@@ -39,3 +39,7 @@
 * Tuesday AM: [Consuming External API](./week5/tue-am)
 * Tuesday PM: [CORS](./week5/tue-pm)
 * Wednesday PM: [Full-stack](./week5/wed-am)
+
+## Week Sex
+
+* Monday AM: [Introduction to Redux toolkit ](./week6/mon-am)

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
-import { createNewFilm, fetchFilms } from '../slices/films'
+import { postNewFilm, fetchFilms } from '../slices/films'
 
 function Form() {
   const dispatch = useDispatch()
@@ -18,8 +18,12 @@ function Form() {
 
   async function handleSubmit(event) {
     event.preventDefault()
-    // await dispatch(fakeAction())
-    await dispatch(createNewFilm(form))
+    await dispatch(postNewFilm(form))
+    setForm({
+      ...form,
+      name: '',
+      quote: '',
+    })
     await dispatch(fetchFilms())
   }
 

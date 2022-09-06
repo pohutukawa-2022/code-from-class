@@ -1,13 +1,16 @@
 import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchFilms } from '../slices/films.js'
 
 function List() {
-  const films = [
-    { id: 1, name: 'film1', quote: 'quote1' },
-    { id: 2, name: 'film2', quote: 'quote2' },
-  ]
+
+  const dispatch = useDispatch()
+  const films = useSelector(state => state.films)
 
   useEffect(async () => {
     // fetch your async actions here
+    dispatch(fetchFilms())
+
   }, [])
 
   return (

@@ -1,7 +1,9 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 
-function Indicator () {
+// this was copied from the docs => of framer-motion
+
+function Indicator() {
   return <motion.div
     className='bg-blue-600 rounded-md w-20 h-20 absolute'
     animate={{

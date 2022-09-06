@@ -1,0 +1,93 @@
+{
+  "name": "w5d3a",
+  "version": "0.2.1",
+  "description": "React components consuming Web APIs",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server",
+    "test": "jest",
+    "test:watch": "jest --noStackTrace --watchAll",
+    "dev": "run-p dev:client dev:server",
+    "dev:client": "run-p webpack:watch tailwind",
+    "dev:server": "nodemon --watch server server/index.js",
+    "build": "run-p build:client build:server",
+    "build:client": "npm run webpack -- --mode production",
+    "build:server": "npm run knex -- migrate:latest",
+    "lint": "eslint --ext .js,.jsx .",
+    "webpack:watch": "npm run webpack -- --watch",
+    "webpack": "webpack --config ./client/webpack.config.js",
+    "knex": "knex --knexfile ./server/db/knexfile.js",
+    "tailwind": "tailwindcss -i ./server/public/main.css -o ./server/public/styles.css --watch",
+    "postinstall": "tailwindcss -i ./server/public/main.css -o ./server/public/styles.css"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties",
+      "@babel/plugin-proposal-object-rest-spread",
+      "@babel/plugin-transform-regenerator",
+      "@babel/plugin-transform-runtime"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "eda/react",
+    "ignorePatterns": [
+      "bundle.js"
+    ]
+  },
+  "author": "EDA",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.1",
+    "@babel/plugin-transform-regenerator": "^7.12.13",
+    "@babel/plugin-transform-runtime": "^7.12.15",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@reduxjs/toolkit": "^1.8.2",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "eslint": "^8.8.0",
+    "eslint-config-eda": "^1.1.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jest": "^26.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.28.0",
+    "framer-motion": "^6.3.0",
+    "jest": "^26.6.3",
+    "nodemon": "^2.0.6",
+    "npm-run-all": "^4.1.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^6.3.0",
+    "redux": "^4.1.2",
+    "redux-thunk": "^2.4.0",
+    "regenerator-runtime": "^0.13.9",
+    "superagent": "^6.1.0",
+    "supertest": "^6.0.1",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "@babel/register": "^7.12.10",
+    "@vscode/sqlite3": "^5.0.7",
+    "express": "^4.17.1",
+    "knex": "^1.0.1"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}

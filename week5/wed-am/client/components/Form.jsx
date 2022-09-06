@@ -14,6 +14,7 @@ function Form() {
     event.preventDefault()
 
     // TODO: post the input using an HTTP call then navigate
+<<<<<<< HEAD
     // console.log(input)
     addLanguage(input)
       .then((id) => {
@@ -22,6 +23,14 @@ function Form() {
       .catch((err) => {
         console.error(err)
       })
+=======
+    addLanguage(input).then((id) => {
+      console.log(id)
+    })
+    .catch(err => {
+      console.error(err);
+    })
+>>>>>>> 7f626348fbd35098d6777d67972ddc2a20c94484
     navigate('/')
   }
 

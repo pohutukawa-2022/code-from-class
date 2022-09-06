@@ -10,6 +10,7 @@ export function getFilms() {
 
 export function addNewFilm(film) {
   const { name, quote } = film
+  // validation here
   return request
     .post(url)
     .send({ name, quote })

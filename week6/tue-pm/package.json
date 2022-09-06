@@ -9,6 +9,7 @@
     "dev:client": "webpack --watch",
     "dev:server": "nodemon server",
     "start": "node server",
+    "test": "jest --watchAll",
     "dev": "run-p dev:client dev:server"
   },
   "author": "EDA",
@@ -41,7 +42,8 @@
     "webpack-cli": "^3.3.11"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "jest": "^29.0.2"
   },
   "prettier": {
     "semi": false,

@@ -10,6 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const store = configureStore({
     reducer: {
       todos,
+      // other reducers go here
+      // theme,
+      // user,
+      // error,
     },
   })
 

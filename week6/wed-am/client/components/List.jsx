@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchFilms } from '../slices/films.js'
@@ -11,6 +12,25 @@ function List() {
     // fetch your async actions here
     dispatch(fetchFilms())
 
+=======
+import React, { useEffect, useState } from 'react'
+import { useSelector, useDispatch } from 'react-redux'
+import { getFilms } from '../apis/api'
+import { fetchFilms } from '../slices/films'
+
+function List() {
+  const dispatch = useDispatch()
+  const films = useSelector((state) => state.films)
+  // const [films, setFilms] = useState([])
+
+  useEffect(async () => {
+    // fetch your async actions here
+    await dispatch(fetchFilms())
+
+    // week 5, the old method
+    // const newFilms = await getFilms()
+    // setFilms(newFilms)
+>>>>>>> 29f1a74a921e8fe1bc26dac3fc87575db7cbbac9
   }, [])
 
   return (

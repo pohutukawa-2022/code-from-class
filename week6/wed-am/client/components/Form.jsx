@@ -1,9 +1,14 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
+<<<<<<< HEAD
 import { postNewFilm, fetchFilms } from '../slices/films'
+=======
+import { fetchFilms, postNewFilm } from '../slices/films'
+>>>>>>> 29f1a74a921e8fe1bc26dac3fc87575db7cbbac9
 
 function Form() {
   const dispatch = useDispatch()
+
   const [form, setForm] = useState({
     name: '',
     quote: '',
@@ -18,13 +23,19 @@ function Form() {
 
   async function handleSubmit(event) {
     event.preventDefault()
+<<<<<<< HEAD
     await dispatch(postNewFilm(form))
     setForm({
       ...form,
       name: '',
       quote: '',
     })
+=======
+    
+    await dispatch(postNewFilm(form))
+>>>>>>> 29f1a74a921e8fe1bc26dac3fc87575db7cbbac9
     await dispatch(fetchFilms())
+
   }
 
   return (

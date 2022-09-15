@@ -40,7 +40,7 @@
 * Tuesday PM: [CORS](./week5/tue-pm)
 * Wednesday PM: [Full-stack](./week5/wed-am)
 
-## Week Sex
+## Week Six
 
 * Monday AM: [Introduction to Redux toolkit ](./week6/mon-am)
 * Tue PM: [Side-effects vs Pure functions and testing reducers](./week6/tue-pm)

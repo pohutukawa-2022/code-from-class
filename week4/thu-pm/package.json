@@ -4,11 +4,12 @@
   "description": "React Forms",
   "main": "server/index.js",
   "scripts": {
-    "start": "run-p webpack server",
-    "dev": "run-p client server",
+    "start": "run-p webpack server css",
+    "dev": "run-p client server css",
     "webpack": "webpack --config client/webpack.config.js",
     "client": "npm run webpack -- --watch",
     "server": "node server",
+    "css": "tailwindcss -i ./server/public/input.css -o ./server/public/main.css --watch",
     "test": "jest --watch --noStackTrace",
     "lint": "eslint --ext .js,.jsx ."
   },
@@ -51,12 +52,12 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^6.2.1",
+    "tailwindcss": "^3.1.8",
     "webpack": "^5.12.1",
     "webpack-cli": "^4.3.1"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "milligram": "^1.4.1"
+    "express": "^4.17.1"
   },
   "prettier": {
     "semi": false,
